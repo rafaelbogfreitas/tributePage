@@ -1,117 +1,84 @@
-h1 {
-    font-family: "Special Elite";
-}
+/* Global Styles */
 
-/*box_quotes*/
-#box_quotes {
-  display:flex;
-  justify-content: space-between;
-}
-.quotes {
-  flex:0 1 calc(47%);
-  background-color: white;
-  box-shadow: 0px 0px 5px 1px;
-  margin:20px auto;
-}
-.content_quotes {
-  text-align: center;
-  font-family: "Special Elite";
-}
-
-/*Image_div*/
- #img-div {
-  flex:0 1 calc(47%);
-  text-align: center;
-  margin-top:20px;
-  background-color: white;
-}
-#image {
-  max-width:100%;
-  box-shadow: 0px 0px 5px 1px;
-  display: block;
-  margin:0 auto;
-}
-#img-caption {
-  margin:10px auto;
-  font-family: Sacramento;
-  font-size: 1.5em;
-  background-color:white;
-  width: 90%;
- }
-
-/*aside*/
-
-aside{
-    overflow:scroll;
-}
-
-#title {
-  font-size: 50px;
-  display:inline;
-  padding:0px 10px;
-  line-height: 0.1px;
-  }
-
-header {
-  text-align:center;
-  margin-top:50px;
-}
-footer {
-    font-family: monospace;
+html {
+  font-family: "Open Sans Condensed";
+  font-size: 12px;
 }
 
 body {
-  background-image:linear-gradient(90deg, #E0D5CB, #C6AF99);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  width:90%;
+  margin: 0 auto;
+}
+
+/* Header */
+
+#div_header {
+  display: flex;
+}
+
+#title {
+  font-size: 6rem;
 }
 
 .subtitle {
-  color: #591807;
-  font-size: 38px;
-  font-family: Sacramento;
-  opacity:1;
-  line-height: 1;
-
-}
-.div_header {
-  font-family: "Special Elite";
-  display:block;
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size:2.5rem;
+  color:#A26B3D;
 }
 
-.box_header {
-  font-size: 25px;
-  font-family: Sacramento;
-  margin: 0;
-  background-color: rgba(251, 205, 126, 0.69);
+/* Image */
+
+#img-div {
+  text-align: center;
+  float:left;
+  margin-right: 3%;
 }
 
+#image {
+  max-width: 100%;
+}
+
+/* Main Content */
+
+.box_header{
+  margin-bottom: 1%;
+  font-size: 2rem;
+  font-weight: bold;
+  color:#A26B3D;
+}
+
+.quotes {
+  width:100%;
+  margin-left: 3%;
+  border-left: 1px solid #A26B3D;
+  padding-left: 1%;
+  clear:both;
+}
+
+.content_quotes::before{
+  content:"\201c";
+  font-size: 30px;
+  font-family: georgia;
+  color:#A26B3D;
+}
+
+.content_quotes::after{
+  content:"\202c";
+  font-size: 30px;
+  font-family: georgia;
+}
 
 #tribute-info {
-  max-width: 90%;
-  height: auto;
-  background-color: white;
-  margin:0 auto;
-  box-shadow: 0px 0px 5px 1px;
-  text-align:justify;
+  font-size: 1.7rem;
+  line-height: 2.1rem;
+  font-weight:lighter;
 }
 
-#tribute-info p {
-  font-family: "Special Elite";
-  max-width: 80%;
-  margin:0 auto;
-  line-height:1.5;
-}
+/* Footer */
 
-#main {
-  text-align:center;
-}
-
-/* MEDIA QUERIES */
-
-@media only screen and (max-width:1030px) {
-  #box_quotes {
-    display:flex;
-    flex-direction: column;
-  }
+footer {
+  clear:both;
+  margin-top: 50px;
+  font-size: 2.5rem;
 }
